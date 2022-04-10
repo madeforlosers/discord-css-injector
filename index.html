@@ -1,1 +1,20 @@
-test
+<style>
+  background:lightblue;
+  text-align:center;
+</style>
+
+<h1>discord CSS injector<h1>
+  <h3><i>for information read the readme</i></h3>
+<form onsubmit="run()">
+  <label for="css">CSS To inject</label><br>
+  <textarea id=css width=500 height=500 required></textarea><br>
+  <input type="submit" value="Submit">
+ </form>
+ <a id="output"></a>
+ <script>
+   function run(){
+     output.innerHTML = "javascript:document.innerHTML+='<style>"+css.value+"</style>'"
+   }
+  </script>
+ 
+ 
