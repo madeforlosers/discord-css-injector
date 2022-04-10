@@ -21,7 +21,7 @@
  <div id="output"></div>
  <script>
    function run(){
-     output.innerHTML = "<a href=\"javascript:document.innerHTML+='<style>"+css.value+"</style>'\">Discord CSS Inject</a>"
+     output.innerHTML = "<a href=\"javascript:sheet.insertRule('"+textarea.value+"', sheet.cssRules.length);">Discord CSS Inject</a>"
    }
   </script>
  
