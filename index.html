@@ -18,10 +18,10 @@
   <textarea id=css required></textarea><br>
   <input type="submit" value="Submit">
  </form>
- <a id="output"></a>
+ <div id="output"></div>
  <script>
    function run(){
-     output.innerHTML = "javascript:document.innerHTML+='<style>"+css.value+"</style>'"
+     output.innerHTML = "<a href=\"javascript:document.innerHTML+='<style>"+css.value+"</style>'\">Discord CSS Inject</a>"
    }
   </script>
  
